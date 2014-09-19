@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1C920F119CC19DB009FE141 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C920F019CC19DB009FE141 /* main.m */; };
+		A1C920F419CC19DB009FE141 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C920F319CC19DB009FE141 /* AppDelegate.m */; };
+		A1C920F619CC19DB009FE141 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A1C920F519CC19DB009FE141 /* Shader.fsh */; };
+		A1C920F819CC19DB009FE141 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A1C920F719CC19DB009FE141 /* Shader.vsh */; };
+		A1C920FB19CC19DB009FE141 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C920FA19CC19DB009FE141 /* GameViewController.m */; };
+		A1C920FE19CC19DB009FE141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C920FC19CC19DB009FE141 /* Main.storyboard */; };
+		A1C9210019CC19DB009FE141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C920FF19CC19DB009FE141 /* Images.xcassets */; };
+		A1C9210319CC19DB009FE141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C9210119CC19DB009FE141 /* LaunchScreen.xib */; };
+		A1C9210F19CC19DB009FE141 /* TestVRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C9210E19CC19DB009FE141 /* TestVRTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1C9210919CC19DB009FE141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1C920E319CC19DB009FE141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C920EA19CC19DB009FE141;
+			remoteInfo = TestVR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1C920EB19CC19DB009FE141 /* TestVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C920EF19CC19DB009FE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C920F019CC19DB009FE141 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1C920F219CC19DB009FE141 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A1C920F319CC19DB009FE141 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A1C920F519CC19DB009FE141 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		A1C920F719CC19DB009FE141 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		A1C920F919CC19DB009FE141 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		A1C920FA19CC19DB009FE141 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		A1C920FD19CC19DB009FE141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1C920FF19CC19DB009FE141 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1C9210219CC19DB009FE141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A1C9210819CC19DB009FE141 /* TestVRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C9210D19CC19DB009FE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C9210E19CC19DB009FE141 /* TestVRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVRTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1C920E819CC19DB009FE141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C9210519CC19DB009FE141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1C920E219CC19DB009FE141 = {
+			isa = PBXGroup;
+			children = (
+				A1C920ED19CC19DB009FE141 /* TestVR */,
+				A1C9210B19CC19DB009FE141 /* TestVRTests */,
+				A1C920EC19CC19DB009FE141 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1C920EC19CC19DB009FE141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1C920EB19CC19DB009FE141 /* TestVR.app */,
+				A1C9210819CC19DB009FE141 /* TestVRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C920ED19CC19DB009FE141 /* TestVR */ = {
+			isa = PBXGroup;
+			children = (
+				A1C920F219CC19DB009FE141 /* AppDelegate.h */,
+				A1C920F319CC19DB009FE141 /* AppDelegate.m */,
+				A1C920F519CC19DB009FE141 /* Shader.fsh */,
+				A1C920F719CC19DB009FE141 /* Shader.vsh */,
+				A1C920F919CC19DB009FE141 /* GameViewController.h */,
+				A1C920FA19CC19DB009FE141 /* GameViewController.m */,
+				A1C920FC19CC19DB009FE141 /* Main.storyboard */,
+				A1C920FF19CC19DB009FE141 /* Images.xcassets */,
+				A1C9210119CC19DB009FE141 /* LaunchScreen.xib */,
+				A1C920EE19CC19DB009FE141 /* Supporting Files */,
+			);
+			path = TestVR;
+			sourceTree = "<group>";
+		};
+		A1C920EE19CC19DB009FE141 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1C920EF19CC19DB009FE141 /* Info.plist */,
+				A1C920F019CC19DB009FE141 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1C9210B19CC19DB009FE141 /* TestVRTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1C9210E19CC19DB009FE141 /* TestVRTests.m */,
+				A1C9210C19CC19DB009FE141 /* Supporting Files */,
+			);
+			path = TestVRTests;
+			sourceTree = "<group>";
+		};
+		A1C9210C19CC19DB009FE141 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1C9210D19CC19DB009FE141 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1C920EA19CC19DB009FE141 /* TestVR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C9211219CC19DB009FE141 /* Build configuration list for PBXNativeTarget "TestVR" */;
+			buildPhases = (
+				A1C920E719CC19DB009FE141 /* Sources */,
+				A1C920E819CC19DB009FE141 /* Frameworks */,
+				A1C920E919CC19DB009FE141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestVR;
+			productName = TestVR;
+			productReference = A1C920EB19CC19DB009FE141 /* TestVR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1C9210719CC19DB009FE141 /* TestVRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C9211519CC19DB009FE141 /* Build configuration list for PBXNativeTarget "TestVRTests" */;
+			buildPhases = (
+				A1C9210419CC19DB009FE141 /* Sources */,
+				A1C9210519CC19DB009FE141 /* Frameworks */,
+				A1C9210619CC19DB009FE141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C9210A19CC19DB009FE141 /* PBXTargetDependency */,
+			);
+			name = TestVRTests;
+			productName = TestVRTests;
+			productReference = A1C9210819CC19DB009FE141 /* TestVRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1C920E319CC19DB009FE141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Andy Qua";
+				TargetAttributes = {
+					A1C920EA19CC19DB009FE141 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					A1C9210719CC19DB009FE141 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = A1C920EA19CC19DB009FE141;
+					};
+				};
+			};
+			buildConfigurationList = A1C920E619CC19DB009FE141 /* Build configuration list for PBXProject "TestVR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1C920E219CC19DB009FE141;
+			productRefGroup = A1C920EC19CC19DB009FE141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1C920EA19CC19DB009FE141 /* TestVR */,
+				A1C9210719CC19DB009FE141 /* TestVRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1C920E919CC19DB009FE141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C9210319CC19DB009FE141 /* LaunchScreen.xib in Resources */,
+				A1C920FE19CC19DB009FE141 /* Main.storyboard in Resources */,
+				A1C9210019CC19DB009FE141 /* Images.xcassets in Resources */,
+				A1C920F819CC19DB009FE141 /* Shader.vsh in Resources */,
+				A1C920F619CC19DB009FE141 /* Shader.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C9210619CC19DB009FE141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1C920E719CC19DB009FE141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C920F419CC19DB009FE141 /* AppDelegate.m in Sources */,
+				A1C920FB19CC19DB009FE141 /* GameViewController.m in Sources */,
+				A1C920F119CC19DB009FE141 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C9210419CC19DB009FE141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C9210F19CC19DB009FE141 /* TestVRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1C9210A19CC19DB009FE141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C920EA19CC19DB009FE141 /* TestVR */;
+			targetProxy = A1C9210919CC19DB009FE141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1C920FC19CC19DB009FE141 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C920FD19CC19DB009FE141 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1C9210119CC19DB009FE141 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C9210219CC19DB009FE141 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1C9211019CC19DB009FE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1C9211119CC19DB009FE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1C9211319CC19DB009FE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestVR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1C9211419CC19DB009FE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestVR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A1C9211619CC19DB009FE141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestVRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestVR.app/TestVR";
+			};
+			name = Debug;
+		};
+		A1C9211719CC19DB009FE141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestVRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestVR.app/TestVR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1C920E619CC19DB009FE141 /* Build configuration list for PBXProject "TestVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C9211019CC19DB009FE141 /* Debug */,
+				A1C9211119CC19DB009FE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C9211219CC19DB009FE141 /* Build configuration list for PBXNativeTarget "TestVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C9211319CC19DB009FE141 /* Debug */,
+				A1C9211419CC19DB009FE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A1C9211519CC19DB009FE141 /* Build configuration list for PBXNativeTarget "TestVRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C9211619CC19DB009FE141 /* Debug */,
+				A1C9211719CC19DB009FE141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1C920E319CC19DB009FE141 /* Project object */;
+}
