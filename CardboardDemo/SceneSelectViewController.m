@@ -58,7 +58,7 @@
         "OculusRiftSceneKit by Brad Larson / Sunset Lake Software\n\n" \
         "Jeff LaMarche - GLProgram OpenGL shader wrapper\n";
     
-    UIAlertController * alert= [UIAlertController alertControllerWithTitle:@"Info"
+    UIAlertController * alert= [UIAlertController alertControllerWithTitle:@"Acknowledgments"
                                                                    message:msg
                                                             preferredStyle:UIAlertControllerStyleAlert];
     
