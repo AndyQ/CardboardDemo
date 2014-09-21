@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		A1A3948519CED91F00887EA2 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3948419CED91F00887EA2 /* Camera.m */; };
 		A1A3948819CEEBB500887EA2 /* SceneKitTextureRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3948719CEEBB500887EA2 /* SceneKitTextureRenderer.m */; };
+		A1A3948B19CEF0B200887EA2 /* GLKitTextureRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3948A19CEF0B200887EA2 /* GLKitTextureRenderer.m */; };
+		A1A3948E19CEF4FF00887EA2 /* TextureRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3948D19CEF4FF00887EA2 /* TextureRenderer.m */; };
+		A1A3949219CF247500887EA2 /* SceneSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3949119CF247500887EA2 /* SceneSelectViewController.m */; };
+		A1A3949619CF39E800887EA2 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = A1A3949419CF39E800887EA2 /* LICENCE */; };
+		A1A3949719CF39E800887EA2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A1A3949519CF39E800887EA2 /* README.md */; };
 		A1C920F119CC19DB009FE141 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C920F019CC19DB009FE141 /* main.m */; };
 		A1C920F419CC19DB009FE141 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C920F319CC19DB009FE141 /* AppDelegate.m */; };
 		A1C920F619CC19DB009FE141 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A1C920F519CC19DB009FE141 /* Shader.fsh */; };
@@ -17,9 +22,8 @@
 		A1C920FE19CC19DB009FE141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C920FC19CC19DB009FE141 /* Main.storyboard */; };
 		A1C9210019CC19DB009FE141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C920FF19CC19DB009FE141 /* Images.xcassets */; };
 		A1C9210319CC19DB009FE141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C9210119CC19DB009FE141 /* LaunchScreen.xib */; };
-		A1C9210F19CC19DB009FE141 /* TestVRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C9210E19CC19DB009FE141 /* TestVRTests.m */; };
+		A1C9210F19CC19DB009FE141 /* CardboardDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C9210E19CC19DB009FE141 /* CardboardDemoTests.m */; };
 		A1C9211A19CC1C8E009FE141 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C9211919CC1C8E009FE141 /* GLProgram.m */; };
-		A1C9215019CC250E009FE141 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C9214F19CC250E009FE141 /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,16 @@
 		A1A3948419CED91F00887EA2 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
 		A1A3948619CEEBB500887EA2 /* SceneKitTextureRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneKitTextureRenderer.h; sourceTree = "<group>"; };
 		A1A3948719CEEBB500887EA2 /* SceneKitTextureRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneKitTextureRenderer.m; sourceTree = "<group>"; };
-		A1C920EB19CC19DB009FE141 /* TestVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A3948919CEF0B200887EA2 /* GLKitTextureRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKitTextureRenderer.h; sourceTree = "<group>"; };
+		A1A3948A19CEF0B200887EA2 /* GLKitTextureRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKitTextureRenderer.m; sourceTree = "<group>"; };
+		A1A3948C19CEF4FF00887EA2 /* TextureRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureRenderer.h; sourceTree = "<group>"; };
+		A1A3948D19CEF4FF00887EA2 /* TextureRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextureRenderer.m; sourceTree = "<group>"; };
+		A1A3949019CF247500887EA2 /* SceneSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneSelectViewController.h; sourceTree = "<group>"; };
+		A1A3949119CF247500887EA2 /* SceneSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneSelectViewController.m; sourceTree = "<group>"; };
+		A1A3949319CF25A000887EA2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A1A3949419CF39E800887EA2 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		A1A3949519CF39E800887EA2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A1C920EB19CC19DB009FE141 /* CardboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C920EF19CC19DB009FE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C920F019CC19DB009FE141 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1C920F219CC19DB009FE141 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,12 +62,11 @@
 		A1C920FD19CC19DB009FE141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1C920FF19CC19DB009FE141 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1C9210219CC19DB009FE141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A1C9210819CC19DB009FE141 /* TestVRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C9210819CC19DB009FE141 /* CardboardDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardboardDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C9210D19CC19DB009FE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1C9210E19CC19DB009FE141 /* TestVRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVRTests.m; sourceTree = "<group>"; };
+		A1C9210E19CC19DB009FE141 /* CardboardDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardboardDemoTests.m; sourceTree = "<group>"; };
 		A1C9211819CC1C8E009FE141 /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
 		A1C9211919CC1C8E009FE141 /* GLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLProgram.m; sourceTree = "<group>"; };
-		A1C9214F19CC250E009FE141 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +90,8 @@
 		A1C920E219CC19DB009FE141 = {
 			isa = PBXGroup;
 			children = (
-				A1C920ED19CC19DB009FE141 /* TestVR */,
-				A1C9210B19CC19DB009FE141 /* TestVRTests */,
+				A1C920ED19CC19DB009FE141 /* CardboardDemo */,
+				A1C9210B19CC19DB009FE141 /* CardboardDemoTests */,
 				A1C920EC19CC19DB009FE141 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,13 +99,13 @@
 		A1C920EC19CC19DB009FE141 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1C920EB19CC19DB009FE141 /* TestVR.app */,
-				A1C9210819CC19DB009FE141 /* TestVRTests.xctest */,
+				A1C920EB19CC19DB009FE141 /* CardboardDemo.app */,
+				A1C9210819CC19DB009FE141 /* CardboardDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A1C920ED19CC19DB009FE141 /* TestVR */ = {
+		A1C920ED19CC19DB009FE141 /* CardboardDemo */ = {
 			isa = PBXGroup;
 			children = (
 				A1C920F219CC19DB009FE141 /* AppDelegate.h */,
@@ -102,37 +114,45 @@
 				A1C920F719CC19DB009FE141 /* Shader.vsh */,
 				A1A3948319CED91F00887EA2 /* Camera.h */,
 				A1A3948419CED91F00887EA2 /* Camera.m */,
+				A1A3949019CF247500887EA2 /* SceneSelectViewController.h */,
+				A1A3949119CF247500887EA2 /* SceneSelectViewController.m */,
 				A1C920F919CC19DB009FE141 /* GameViewController.h */,
 				A1C920FA19CC19DB009FE141 /* GameViewController.m */,
+				A1A3948C19CEF4FF00887EA2 /* TextureRenderer.h */,
+				A1A3948D19CEF4FF00887EA2 /* TextureRenderer.m */,
 				A1A3948619CEEBB500887EA2 /* SceneKitTextureRenderer.h */,
 				A1A3948719CEEBB500887EA2 /* SceneKitTextureRenderer.m */,
+				A1A3948919CEF0B200887EA2 /* GLKitTextureRenderer.h */,
+				A1A3948A19CEF0B200887EA2 /* GLKitTextureRenderer.m */,
 				A1C9211819CC1C8E009FE141 /* GLProgram.h */,
 				A1C9211919CC1C8E009FE141 /* GLProgram.m */,
+				A1A3949319CF25A000887EA2 /* Constants.h */,
 				A1C920FC19CC19DB009FE141 /* Main.storyboard */,
-				A1C9214F19CC250E009FE141 /* art.scnassets */,
 				A1C920FF19CC19DB009FE141 /* Images.xcassets */,
 				A1C9210119CC19DB009FE141 /* LaunchScreen.xib */,
 				A1C920EE19CC19DB009FE141 /* Supporting Files */,
 			);
-			path = TestVR;
+			path = CardboardDemo;
 			sourceTree = "<group>";
 		};
 		A1C920EE19CC19DB009FE141 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1A3949419CF39E800887EA2 /* LICENCE */,
+				A1A3949519CF39E800887EA2 /* README.md */,
 				A1C920EF19CC19DB009FE141 /* Info.plist */,
 				A1C920F019CC19DB009FE141 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A1C9210B19CC19DB009FE141 /* TestVRTests */ = {
+		A1C9210B19CC19DB009FE141 /* CardboardDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				A1C9210E19CC19DB009FE141 /* TestVRTests.m */,
+				A1C9210E19CC19DB009FE141 /* CardboardDemoTests.m */,
 				A1C9210C19CC19DB009FE141 /* Supporting Files */,
 			);
-			path = TestVRTests;
+			path = CardboardDemoTests;
 			sourceTree = "<group>";
 		};
 		A1C9210C19CC19DB009FE141 /* Supporting Files */ = {
@@ -146,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1C920EA19CC19DB009FE141 /* TestVR */ = {
+		A1C920EA19CC19DB009FE141 /* CardboardDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1C9211219CC19DB009FE141 /* Build configuration list for PBXNativeTarget "TestVR" */;
+			buildConfigurationList = A1C9211219CC19DB009FE141 /* Build configuration list for PBXNativeTarget "CardboardDemo" */;
 			buildPhases = (
 				A1C920E719CC19DB009FE141 /* Sources */,
 				A1C920E819CC19DB009FE141 /* Frameworks */,
@@ -158,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = TestVR;
+			name = CardboardDemo;
 			productName = TestVR;
-			productReference = A1C920EB19CC19DB009FE141 /* TestVR.app */;
+			productReference = A1C920EB19CC19DB009FE141 /* CardboardDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A1C9210719CC19DB009FE141 /* TestVRTests */ = {
+		A1C9210719CC19DB009FE141 /* CardboardDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1C9211519CC19DB009FE141 /* Build configuration list for PBXNativeTarget "TestVRTests" */;
+			buildConfigurationList = A1C9211519CC19DB009FE141 /* Build configuration list for PBXNativeTarget "CardboardDemoTests" */;
 			buildPhases = (
 				A1C9210419CC19DB009FE141 /* Sources */,
 				A1C9210519CC19DB009FE141 /* Frameworks */,
@@ -176,9 +196,9 @@
 			dependencies = (
 				A1C9210A19CC19DB009FE141 /* PBXTargetDependency */,
 			);
-			name = TestVRTests;
+			name = CardboardDemoTests;
 			productName = TestVRTests;
-			productReference = A1C9210819CC19DB009FE141 /* TestVRTests.xctest */;
+			productReference = A1C9210819CC19DB009FE141 /* CardboardDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A1C920E619CC19DB009FE141 /* Build configuration list for PBXProject "TestVR" */;
+			buildConfigurationList = A1C920E619CC19DB009FE141 /* Build configuration list for PBXProject "CardboardDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -212,8 +232,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1C920EA19CC19DB009FE141 /* TestVR */,
-				A1C9210719CC19DB009FE141 /* TestVRTests */,
+				A1C920EA19CC19DB009FE141 /* CardboardDemo */,
+				A1C9210719CC19DB009FE141 /* CardboardDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,8 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A3949619CF39E800887EA2 /* LICENCE in Resources */,
 				A1C9210319CC19DB009FE141 /* LaunchScreen.xib in Resources */,
-				A1C9215019CC250E009FE141 /* art.scnassets in Resources */,
 				A1C920FE19CC19DB009FE141 /* Main.storyboard in Resources */,
 				A1C9210019CC19DB009FE141 /* Images.xcassets in Resources */,
 				A1C920F819CC19DB009FE141 /* Shader.vsh in Resources */,
@@ -247,8 +267,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C920F419CC19DB009FE141 /* AppDelegate.m in Sources */,
+				A1A3949219CF247500887EA2 /* SceneSelectViewController.m in Sources */,
+				A1A3949719CF39E800887EA2 /* README.md in Sources */,
 				A1A3948519CED91F00887EA2 /* Camera.m in Sources */,
 				A1C9211A19CC1C8E009FE141 /* GLProgram.m in Sources */,
+				A1A3948B19CEF0B200887EA2 /* GLKitTextureRenderer.m in Sources */,
+				A1A3948E19CEF4FF00887EA2 /* TextureRenderer.m in Sources */,
 				A1C920FB19CC19DB009FE141 /* GameViewController.m in Sources */,
 				A1A3948819CEEBB500887EA2 /* SceneKitTextureRenderer.m in Sources */,
 				A1C920F119CC19DB009FE141 /* main.m in Sources */,
@@ -259,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C9210F19CC19DB009FE141 /* TestVRTests.m in Sources */,
+				A1C9210F19CC19DB009FE141 /* CardboardDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +292,7 @@
 /* Begin PBXTargetDependency section */
 		A1C9210A19CC19DB009FE141 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A1C920EA19CC19DB009FE141 /* TestVR */;
+			target = A1C920EA19CC19DB009FE141 /* CardboardDemo */;
 			targetProxy = A1C9210919CC19DB009FE141 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -373,9 +397,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TestVR/Info.plist;
+				INFOPLIST_FILE = CardboardDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CardboardDemo;
 			};
 			name = Debug;
 		};
@@ -383,9 +407,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TestVR/Info.plist;
+				INFOPLIST_FILE = CardboardDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CardboardDemo;
 			};
 			name = Release;
 		};
@@ -401,10 +425,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TestVRTests/Info.plist;
+				INFOPLIST_FILE = CardboardDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestVR.app/TestVR";
+				PRODUCT_NAME = CardboardDemoTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardboardDemo.app/CardboardDemo";
 			};
 			name = Debug;
 		};
@@ -416,17 +440,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TestVRTests/Info.plist;
+				INFOPLIST_FILE = CardboardDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestVR.app/TestVR";
+				PRODUCT_NAME = CardboardDemoTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardboardDemo.app/CardboardDemo";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A1C920E619CC19DB009FE141 /* Build configuration list for PBXProject "TestVR" */ = {
+		A1C920E619CC19DB009FE141 /* Build configuration list for PBXProject "CardboardDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1C9211019CC19DB009FE141 /* Debug */,
@@ -435,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1C9211219CC19DB009FE141 /* Build configuration list for PBXNativeTarget "TestVR" */ = {
+		A1C9211219CC19DB009FE141 /* Build configuration list for PBXNativeTarget "CardboardDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1C9211319CC19DB009FE141 /* Debug */,
@@ -444,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1C9211519CC19DB009FE141 /* Build configuration list for PBXNativeTarget "TestVRTests" */ = {
+		A1C9211519CC19DB009FE141 /* Build configuration list for PBXNativeTarget "CardboardDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1C9211619CC19DB009FE141 /* Debug */,
