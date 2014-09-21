@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="smB-LG-nDb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cardboard Demo-->
+        <scene sceneID="41G-Tg-T9j">
+            <objects>
+                <viewController id="smB-LG-nDb" customClass="SceneSelectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AIm-4c-Oao"/>
+                        <viewControllerLayoutGuide type="bottom" id="t4O-Zy-opG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nfw-dC-FOm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tls-OR-H1s">
+                                <rect key="frame" x="258" y="249" width="84" height="30"/>
+                                <state key="normal" title="GLKit Demo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LVB-YS-i5n" kind="presentation" identifier="showGLKit" id="w3o-M3-3gv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1H-Ma-woT">
+                                <rect key="frame" x="247" y="321" width="107" height="30"/>
+                                <state key="normal" title="SceneKit Demo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LVB-YS-i5n" kind="presentation" identifier="showSceneKit" id="VhZ-el-JgZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note SceneKit demo does not work correctly as depth information is not handled by SceneKit yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2w-lE-W5D">
+                                <rect key="frame" x="88" y="343" width="423" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="423" id="AlL-Qb-5N2"/>
+                                    <constraint firstAttribute="height" constant="51" id="Pp6-oc-zMT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Written by Andy Qua - See http://github.com/AndyQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Qkf-dV-YDY">
+                                <rect key="frame" x="95" y="559" width="410.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cardboard Demo" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="i86-CC-4Bv">
+                                <rect key="frame" x="157" y="140" width="285" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP3-7o-MFe">
+                                <rect key="frame" x="562" y="28" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoPressed:" destination="smB-LG-nDb" eventType="touchUpInside" id="FSe-f5-147"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Qkf-dV-YDY" secondAttribute="centerX" id="0un-G8-GdI"/>
+                            <constraint firstAttribute="centerX" secondItem="u2w-lE-W5D" secondAttribute="centerX" id="7BA-mM-nX6"/>
+                            <constraint firstItem="t4O-Zy-opG" firstAttribute="top" secondItem="Qkf-dV-YDY" secondAttribute="bottom" constant="20.5" id="9it-bh-87q"/>
+                            <constraint firstAttribute="centerY" secondItem="tls-OR-H1s" secondAttribute="centerY" constant="36" id="PM3-zm-Yld"/>
+                            <constraint firstAttribute="centerY" secondItem="P1H-Ma-woT" secondAttribute="centerY" constant="-36" id="Xv5-j8-tFH"/>
+                            <constraint firstAttribute="centerX" secondItem="P1H-Ma-woT" secondAttribute="centerX" id="jBk-4z-wgs"/>
+                            <constraint firstAttribute="centerX" secondItem="tls-OR-H1s" secondAttribute="centerX" id="kGi-ku-ocY"/>
+                            <constraint firstItem="u2w-lE-W5D" firstAttribute="top" secondItem="P1H-Ma-woT" secondAttribute="bottom" constant="-8" id="oaR-5z-k6K"/>
+                            <constraint firstItem="i86-CC-4Bv" firstAttribute="top" secondItem="AIm-4c-Oao" secondAttribute="bottom" constant="120" id="oyP-XQ-JKx">
+                                <variation key="heightClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="i86-CC-4Bv" secondAttribute="centerX" id="qDY-w4-qUR"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Cardboard Demo" id="gJB-Dw-waI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfy-6o-1l9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="415"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HDc-Oi-m1f"/>
+                        <viewControllerLayoutGuide type="bottom" id="BUi-cd-6YH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="GLKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EG-ci-27P">
+                                <rect key="frame" x="16" y="5" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0n6-eB-96Q" kind="unwind" unwindAction="unwindToThisViewController:" id="0MR-dI-B6q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4u-lT-Ktp">
+                                <rect key="frame" x="562" y="9" width="22" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoPressed:" destination="LVB-YS-i5n" eventType="touchUpInside" id="H7c-zm-tTd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C4u-lT-Ktp" firstAttribute="top" secondItem="bdc-N1-crn" secondAttribute="topMargin" constant="9" id="014-fV-GGt"/>
+                            <constraint firstItem="2EG-ci-27P" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leadingMargin" id="1J2-Rc-Et5"/>
+                            <constraint firstItem="C4u-lT-Ktp" firstAttribute="trailing" secondItem="bdc-N1-crn" secondAttribute="trailingMargin" id="cNl-2N-n3O"/>
+                            <constraint firstItem="2EG-ci-27P" firstAttribute="top" secondItem="bdc-N1-crn" secondAttribute="topMargin" constant="5" id="nhD-Td-Pqd"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+                <exit id="0n6-eB-96Q" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1229" y="415"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VhZ-el-JgZ"/>
+    </inferredMetricsTieBreakers>
+</document>
