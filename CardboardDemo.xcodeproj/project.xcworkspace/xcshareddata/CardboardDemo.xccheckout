@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CA3908A6-7B31-498A-BD46-966EA294A1C1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CardboardDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>71658D722C6CB38029B154158C429EF458E4DA5A</key>
+		<string>https://github.com/AndyQ/CardboardDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CardboardDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>71658D722C6CB38029B154158C429EF458E4DA5A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AndyQ/CardboardDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>71658D722C6CB38029B154158C429EF458E4DA5A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>71658D722C6CB38029B154158C429EF458E4DA5A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CardboardDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

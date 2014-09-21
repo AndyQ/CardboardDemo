@@ -7,6 +7,8 @@ This is a simple app that demonstrates rendering a 3D scene on an iOS device so 
 
 It has very basic head tracking (no movement yet).
 
+![Screenshot](http://andyq.github.io/CardboardDemo/images/cardboard.png)
+
 ## License ##
 
 BSD-style, with the full license available in LICENCE.
