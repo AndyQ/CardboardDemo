@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1A3948519CED91F00887EA2 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3948419CED91F00887EA2 /* Camera.m */; };
+		A1A3948819CEEBB500887EA2 /* SceneKitTextureRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3948719CEEBB500887EA2 /* SceneKitTextureRenderer.m */; };
 		A1C920F119CC19DB009FE141 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C920F019CC19DB009FE141 /* main.m */; };
 		A1C920F419CC19DB009FE141 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C920F319CC19DB009FE141 /* AppDelegate.m */; };
 		A1C920F619CC19DB009FE141 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A1C920F519CC19DB009FE141 /* Shader.fsh */; };
@@ -16,6 +18,8 @@
 		A1C9210019CC19DB009FE141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C920FF19CC19DB009FE141 /* Images.xcassets */; };
 		A1C9210319CC19DB009FE141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C9210119CC19DB009FE141 /* LaunchScreen.xib */; };
 		A1C9210F19CC19DB009FE141 /* TestVRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C9210E19CC19DB009FE141 /* TestVRTests.m */; };
+		A1C9211A19CC1C8E009FE141 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C9211919CC1C8E009FE141 /* GLProgram.m */; };
+		A1C9215019CC250E009FE141 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C9214F19CC250E009FE141 /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1A3948319CED91F00887EA2 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		A1A3948419CED91F00887EA2 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		A1A3948619CEEBB500887EA2 /* SceneKitTextureRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneKitTextureRenderer.h; sourceTree = "<group>"; };
+		A1A3948719CEEBB500887EA2 /* SceneKitTextureRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneKitTextureRenderer.m; sourceTree = "<group>"; };
 		A1C920EB19CC19DB009FE141 /* TestVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C920EF19CC19DB009FE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C920F019CC19DB009FE141 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,6 +52,9 @@
 		A1C9210819CC19DB009FE141 /* TestVRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C9210D19CC19DB009FE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C9210E19CC19DB009FE141 /* TestVRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVRTests.m; sourceTree = "<group>"; };
+		A1C9211819CC1C8E009FE141 /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
+		A1C9211919CC1C8E009FE141 /* GLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLProgram.m; sourceTree = "<group>"; };
+		A1C9214F19CC250E009FE141 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +100,16 @@
 				A1C920F319CC19DB009FE141 /* AppDelegate.m */,
 				A1C920F519CC19DB009FE141 /* Shader.fsh */,
 				A1C920F719CC19DB009FE141 /* Shader.vsh */,
+				A1A3948319CED91F00887EA2 /* Camera.h */,
+				A1A3948419CED91F00887EA2 /* Camera.m */,
 				A1C920F919CC19DB009FE141 /* GameViewController.h */,
 				A1C920FA19CC19DB009FE141 /* GameViewController.m */,
+				A1A3948619CEEBB500887EA2 /* SceneKitTextureRenderer.h */,
+				A1A3948719CEEBB500887EA2 /* SceneKitTextureRenderer.m */,
+				A1C9211819CC1C8E009FE141 /* GLProgram.h */,
+				A1C9211919CC1C8E009FE141 /* GLProgram.m */,
 				A1C920FC19CC19DB009FE141 /* Main.storyboard */,
+				A1C9214F19CC250E009FE141 /* art.scnassets */,
 				A1C920FF19CC19DB009FE141 /* Images.xcassets */,
 				A1C9210119CC19DB009FE141 /* LaunchScreen.xib */,
 				A1C920EE19CC19DB009FE141 /* Supporting Files */,
@@ -206,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C9210319CC19DB009FE141 /* LaunchScreen.xib in Resources */,
+				A1C9215019CC250E009FE141 /* art.scnassets in Resources */,
 				A1C920FE19CC19DB009FE141 /* Main.storyboard in Resources */,
 				A1C9210019CC19DB009FE141 /* Images.xcassets in Resources */,
 				A1C920F819CC19DB009FE141 /* Shader.vsh in Resources */,
@@ -228,7 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C920F419CC19DB009FE141 /* AppDelegate.m in Sources */,
+				A1A3948519CED91F00887EA2 /* Camera.m in Sources */,
+				A1C9211A19CC1C8E009FE141 /* GLProgram.m in Sources */,
 				A1C920FB19CC19DB009FE141 /* GameViewController.m in Sources */,
+				A1A3948819CEEBB500887EA2 /* SceneKitTextureRenderer.m in Sources */,
 				A1C920F119CC19DB009FE141 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +442,7 @@
 				A1C9211419CC19DB009FE141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1C9211519CC19DB009FE141 /* Build configuration list for PBXNativeTarget "TestVRTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +451,7 @@
 				A1C9211719CC19DB009FE141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
