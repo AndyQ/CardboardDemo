@@ -225,7 +225,7 @@
     glViewport(0, 0, EYE_RENDER_RESOLUTION_X, EYE_RENDER_RESOLUTION_Y);
     glClearColor(0, 1, 1, 0);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    [renderer renderLeftTexture];
+    [renderer renderRightTexture];
     
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 

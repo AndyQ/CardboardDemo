@@ -14,6 +14,8 @@
 		A1A3949219CF247500887EA2 /* SceneSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3949119CF247500887EA2 /* SceneSelectViewController.m */; };
 		A1A3949619CF39E800887EA2 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = A1A3949419CF39E800887EA2 /* LICENCE */; };
 		A1A3949719CF39E800887EA2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A1A3949519CF39E800887EA2 /* README.md */; };
+		A1A394A219CF581F00887EA2 /* StereoImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A394A119CF581F00887EA2 /* StereoImageViewController.m */; };
+		A1B2BB8919D1B6610070DDF3 /* CustomNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B2BB8819D1B6610070DDF3 /* CustomNavController.m */; };
 		A1C920F119CC19DB009FE141 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C920F019CC19DB009FE141 /* main.m */; };
 		A1C920F419CC19DB009FE141 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C920F319CC19DB009FE141 /* AppDelegate.m */; };
 		A1C920F619CC19DB009FE141 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A1C920F519CC19DB009FE141 /* Shader.fsh */; };
@@ -50,6 +52,10 @@
 		A1A3949319CF25A000887EA2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A1A3949419CF39E800887EA2 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENCE; path = ../LICENCE; sourceTree = "<group>"; };
 		A1A3949519CF39E800887EA2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A1A394A019CF581F00887EA2 /* StereoImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StereoImageViewController.h; sourceTree = "<group>"; };
+		A1A394A119CF581F00887EA2 /* StereoImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StereoImageViewController.m; sourceTree = "<group>"; };
+		A1B2BB8719D1B6610070DDF3 /* CustomNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavController.h; sourceTree = "<group>"; };
+		A1B2BB8819D1B6610070DDF3 /* CustomNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavController.m; sourceTree = "<group>"; };
 		A1C920EB19CC19DB009FE141 /* CardboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C920EF19CC19DB009FE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C920F019CC19DB009FE141 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -114,8 +120,12 @@
 				A1C920F719CC19DB009FE141 /* Shader.vsh */,
 				A1A3948319CED91F00887EA2 /* Camera.h */,
 				A1A3948419CED91F00887EA2 /* Camera.m */,
+				A1B2BB8719D1B6610070DDF3 /* CustomNavController.h */,
+				A1B2BB8819D1B6610070DDF3 /* CustomNavController.m */,
 				A1A3949019CF247500887EA2 /* SceneSelectViewController.h */,
 				A1A3949119CF247500887EA2 /* SceneSelectViewController.m */,
+				A1A394A019CF581F00887EA2 /* StereoImageViewController.h */,
+				A1A394A119CF581F00887EA2 /* StereoImageViewController.m */,
 				A1C920F919CC19DB009FE141 /* GameViewController.h */,
 				A1C920FA19CC19DB009FE141 /* GameViewController.m */,
 				A1A3948C19CEF4FF00887EA2 /* TextureRenderer.h */,
@@ -270,8 +280,10 @@
 				A1A3949219CF247500887EA2 /* SceneSelectViewController.m in Sources */,
 				A1A3949719CF39E800887EA2 /* README.md in Sources */,
 				A1A3948519CED91F00887EA2 /* Camera.m in Sources */,
+				A1B2BB8919D1B6610070DDF3 /* CustomNavController.m in Sources */,
 				A1C9211A19CC1C8E009FE141 /* GLProgram.m in Sources */,
 				A1A3948B19CEF0B200887EA2 /* GLKitTextureRenderer.m in Sources */,
+				A1A394A219CF581F00887EA2 /* StereoImageViewController.m in Sources */,
 				A1A3948E19CEF4FF00887EA2 /* TextureRenderer.m in Sources */,
 				A1C920FB19CC19DB009FE141 /* GameViewController.m in Sources */,
 				A1A3948819CEEBB500887EA2 /* SceneKitTextureRenderer.m in Sources */,

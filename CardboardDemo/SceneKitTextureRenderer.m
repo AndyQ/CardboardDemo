@@ -36,6 +36,8 @@
 {
     self = [super initWithFrameSize:frameSize];
     if (self) {
+        interpupillaryDistance = 0.3;//64.0;
+
         // create a renderer for each eye
         SCNRenderer *(^makeEyeRenderer)() = ^
         {
@@ -51,7 +53,6 @@
         [self setScene:[self createScene]];
 
         [scene.rootNode  addChildNode:headPositionNode];
-
     }
     return self;
 }
@@ -76,7 +77,7 @@
     [super updateDevicePositionWithRoll:roll yaw:yaw pitch:pitch];
     
     rotate += 20;
-    [self setHeadRotationX:-(refYaw-yaw) Y:-(refRoll - roll) Z:0];
+    [self setHeadRotationX:-(refYaw-yaw) Y:(refRoll - roll) Z:0];
 }
 
 #pragma mark -
@@ -113,8 +114,9 @@
     hry = y;
     hrz = z;
     
-    SCNMatrix4 transform       = SCNMatrix4MakeRotation(x, 0, 1, 0);
+    SCNMatrix4 transform       = SCNMatrix4Identity;
     transform                  = SCNMatrix4Rotate(transform, y, 1, 0, 0);
+    transform                  = SCNMatrix4Rotate(transform, x, 0, 1, 0);
     headRotationNode.transform = SCNMatrix4Rotate(transform, z, 0, 0, 1);
 }
 
@@ -171,7 +173,7 @@
     {
         // TODO: read these from the HMD?
         CGFloat verticalFOV = 97.5;
-        CGFloat horizontalFOV = 0; //80.8;
+        CGFloat horizontalFOV = 0.1; //80.8;
         
         SCNCamera *camNode = [SCNCamera camera];
         camNode.xFov = 120;
@@ -182,6 +184,7 @@
         SCNNode *node = [SCNNode node];
         node.camera = camNode;
         node.transform = [self getCameraTranslationForEye:eye];
+//        node.position = SCNVector3Make( 0.2*eye, 0, 0 );
         
         return node;
     };
@@ -189,7 +192,7 @@
     rightEyeRenderer.pointOfView = addNodeforEye(RIGHT);
     
     headPositionNode = [SCNNode node];
-    headPositionNode.position = SCNVector3Make(0, 5, 0);
+    headPositionNode.position = SCNVector3Make(0, 0, 0);
     headRotationNode = [SCNNode node];
     [headPositionNode addChildNode:headRotationNode];
 
@@ -197,7 +200,7 @@
     [self linkNodeToHeadRotation:rightEyeRenderer.pointOfView];
 }
 
-- (SCNScene *) createScene
+- (SCNScene *) createScene2
 {
     SCNScene *newScene = [[SCNScene alloc] init];
     
@@ -235,4 +238,66 @@
 
     return newScene;
 }
+
+
+- (SCNScene *) createScene
+{
+    SCNScene *newScene = [[SCNScene alloc] init];
+    
+    SCNMaterial *material = [SCNMaterial material];
+    
+    material.diffuse.contents  = [UIImage imageNamed:@"wood-diffuse"];
+    material.normal.contents   = [UIImage imageNamed:@"wood-bump"];
+    material.specular.contents = [UIImage imageNamed:@"wood-specular"];
+    
+    material.locksAmbientWithDiffuse = YES;
+
+    
+    for ( int x = -10 ; x <= 10 ; ++x )
+    {
+        for ( int y = -10 ; y <= 10 ; ++y )
+        {
+//            SCNNode *node = [SCNNode nodeWithGeometry:[SCNBox boxWithWidth:0.75 height:0.75 length:0.75 chamferRadius:0]];
+            SCNNode *node = [SCNNode nodeWithGeometry:[SCNSphere sphereWithRadius:0.375]];
+            
+            float z = (x <-4 || x > 4) || (y < -4 || y > 4) ? -5 + 10*RAND_DOUBLE : -3 ;
+
+            node.position = SCNVector3Make(x, y, z );
+//            SCNMaterial *material = [SCNMaterial material];
+            
+//            material.diffuse.contents = [UIColor colorWithRed:RAND_DOUBLE green:RAND_DOUBLE blue:RAND_DOUBLE alpha:1.0];
+//            material.locksAmbientWithDiffuse = true;
+            node.geometry.firstMaterial = material;
+            [newScene.rootNode addChildNode:node];
+
+            double t = 2.0+RAND_DOUBLE * 3.0;
+            float nearZ = (x <-4 || x > 4) || (y < -4 || y > 4) ? 5 : -1;
+            float farZ = (x <-4 || x > 4) || (y < -4 || y > 4) ? -5 : -5;
+            SCNAction *m1 = [SCNAction moveTo:SCNVector3Make(x, y, nearZ) duration:t];
+            SCNAction *m2 = [SCNAction moveTo:SCNVector3Make(x, y, farZ) duration:t];
+            [node runAction:[SCNAction repeatActionForever:[SCNAction sequence:@[m1, m2]]]];
+
+        }
+    
+    }
+    
+    
+    // create and add a light to the scene
+    SCNNode *lightNode = [SCNNode node];
+    lightNode.light = [SCNLight light];
+    lightNode.light.type = SCNLightTypeOmni;
+    lightNode.position = SCNVector3Make(0, 10, 10);
+    [scene.rootNode addChildNode:lightNode];
+    
+    // create and add an ambient light to the scene
+    SCNNode *ambientLightNode = [SCNNode node];
+    ambientLightNode.light = [SCNLight light];
+    ambientLightNode.light.type = SCNLightTypeAmbient;
+    ambientLightNode.light.color = [UIColor redColor];
+    [scene.rootNode addChildNode:ambientLightNode];
+
+    
+    return newScene;
+}
+
 @end

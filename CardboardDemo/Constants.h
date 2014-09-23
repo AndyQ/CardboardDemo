@@ -14,13 +14,14 @@
 
 
 #define ARC4RANDOM_MAX      0x100000000
+#define RAND_DOUBLE     ((double)arc4random() / ARC4RANDOM_MAX)
 
 #define EYE_RENDER_RESOLUTION_X 800
 #define EYE_RENDER_RESOLUTION_Y 1000
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
-#define LEFT 0
+#define LEFT -1
 #define RIGHT 1
 
 #endif

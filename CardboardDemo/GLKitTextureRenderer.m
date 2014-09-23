@@ -125,24 +125,24 @@ GLfloat gCubeVertexData[216] =
 
 - (void)renderLeftTexture
 {
-    [camera strafeCamera:-0.003];
+    [camera strafeCamera:0.005];
     GLKMatrix4 modelViewMatrix = [camera lookAt];
     effect.transform.modelviewMatrix = modelViewMatrix;
     
     [self renderScene];
-    [camera strafeCamera:0.003];
+    [camera strafeCamera:-0.005];
 }
 
 
 - (void)renderRightTexture
 {
     // Right Eye
-    [camera strafeCamera:0.003];
+    [camera strafeCamera:-0.005];
     GLKMatrix4 modelViewMatrix = [camera lookAt];
     effect.transform.modelviewMatrix = modelViewMatrix;
     [self renderScene];
     
-    [camera strafeCamera:-0.003];
+    [camera strafeCamera:0.005];
 }
 
 

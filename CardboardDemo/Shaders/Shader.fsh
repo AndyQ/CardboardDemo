@@ -24,6 +24,8 @@ vec2 HmdWarp(vec2 in01)
 }
 void main()
 {
+//    gl_FragColor = texture2D(inputImageTexture, textureCoordinate);
+
     vec2 tc = HmdWarp(textureCoordinate);
     if (!all(equal(clamp(tc, ScreenCenter-vec2(0.5,0.5), ScreenCenter+vec2(0.5,0.5)), tc)))
         gl_FragColor = vec4(0);
